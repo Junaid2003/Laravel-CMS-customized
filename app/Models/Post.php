@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-
+    
     protected $guarded=[];
 
     public function user(){
@@ -21,6 +21,4 @@ class Post extends Model
         }
         return asset('storage/' . $value);
     }
-    
-
 }
